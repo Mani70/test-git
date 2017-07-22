@@ -1,3 +1,15 @@
+/*
+   I have made little changes in kadane's algorithm, so that it will also work fine, when only -ve numbers are given as input.
+
+   Note: If the given inputs are, -ve numbers only then in that case, same algorithm will find out the maximum of those numbers
+         i.e least -ve number.
+  
+   Key point : If the constraint is given as:   -100 < arr[i] < 100
+               then, intialize max_so_far = -101 (i.e always initialize with minimum)
+	      
+*/	
+
+
 #include<stdio.h>
 
 int find_max_sum(int *arr , int n)
